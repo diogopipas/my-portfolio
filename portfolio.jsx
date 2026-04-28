@@ -86,7 +86,7 @@ function Polaroid({ tilt }) {
         <img src="assets/diogo.jpeg" alt="me, supposedly working" />
       </div>
       <div className="polaroid-caption">
-        diogo, mid-debug<br/>
+        Diogo, mid-debug<br/>
         <span className="polaroid-date">faro, 2026</span>
       </div>
     </div>
@@ -163,7 +163,7 @@ function App() {
             <div className="r-intro-text">
               <p className="r-greeting">hi, <Wave /></p>
               <h1 className="r-h1">
-                i'm <Marker>diogo</Marker>. i write backends,<br/>
+                I'm <Marker>Diogo</Marker>. I write backends,<br/>
                 train small models, and ship<br/>
                 browser extensions when something<br/>
                 annoys me long enough.
