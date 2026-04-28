@@ -27,21 +27,21 @@ const PROJECTS_V2 = [
     tag: "[shipped · 2025]",
     blurb: "a safari extension that fills out the SAPO portal forms for me, because typing the same thing 40 times a week was making me insane. solved a personal annoyance, ended up learning the WebExtensions API.",
     stack: "javascript · webextensions",
-    href: "#"
+    href: "https://github.com/diogopipas/safari-sapo-autofill-extension"
   },
   {
     title: "sms spam classifier",
     tag: "[done · 2025]",
     blurb: "trained a small neural net to detect spam texts. tokenisation, embeddings, the whole bit. part of the freecodecamp ML cert — first time i felt like i actually got how the layers fit together.",
     stack: "python · tensorflow · keras",
-    href: "#"
+    href: "https://github.com/diogopipas/FCC-TF-SPMFILTER"
   },
   {
     title: "exoplanet classifier",
     tag: "[hackathon · 2025]",
     blurb: "48 hours, three people, way too much coffee. built a classifier for nasa space apps. 7th of 15 locally — not bad for a team with no hackathon.",
     stack: "python · ml · sleep deprivation",
-    href: "#"
+    href: "https://github.com/diogopipas/exo-sense"
   }
 ];
 
@@ -203,7 +203,7 @@ function App() {
                     <p>{p.blurb}</p>
                     <div className="r-project-meta">
                       <span><span className="r-meta-k">stack:</span> {p.stack}</span>
-                      <a href={p.href} className="r-link">read more →</a>
+                      <a href={p.href} className="r-link">See Repo →</a>
                     </div>
                   </div>
                 )}
