@@ -268,7 +268,7 @@ function App() {
             <li>
               <span className="r-contact-k">linkedin</span>
               <span className="r-contact-arrow">→</span>
-              <a className="r-link" href="#">linkedin.com/in/diogo-porto</a>
+              <a className="r-link" href="www.linkedin.com/in/diogo-porto-b28ba3301">linkedin.com/in/diogo-porto</a>
             </li>
             <li>
               <span className="r-contact-k">phone</span>
