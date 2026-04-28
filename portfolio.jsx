@@ -18,7 +18,7 @@ const PROJECTS_V2 = [
   {
     title: "roommate-finding app",
     tag: "[wip · 2026]",
-    blurb: "matching uni students who need shared housing. building it because i lived through the housing-search hell myself. might turn into a small startup, might just be a learning project — we'll see.",
+    blurb: "matching uni students who need shared housing. might turn into a small startup, might just be a learning project — we'll see.",
     stack: "react native · node · postgres",
     href: "#"
   },
@@ -39,7 +39,7 @@ const PROJECTS_V2 = [
   {
     title: "exoplanet classifier",
     tag: "[hackathon · 2025]",
-    blurb: "48 hours, four people, way too much coffee. built a classifier for nasa space apps. 7th of 15 locally — not bad for a team that met two days before.",
+    blurb: "48 hours, three people, way too much coffee. built a classifier for nasa space apps. 7th of 15 locally — not bad for a team with no hackathon experience.",
     stack: "python · ml · sleep deprivation",
     href: "#"
   }
@@ -48,7 +48,7 @@ const PROJECTS_V2 = [
 const STACK_V2 = [
   { k: "languages i actually use", v: "java, c/c++, python, sql, bash" },
   { k: "ml-ish stuff", v: "tensorflow, keras, numpy, pandas, jupyter" },
-  { k: "tools", v: "git, docker, linux (arch btw — kidding, mostly ubuntu)" },
+  { k: "tools", v: "git, docker, linux" },
   { k: "web", v: "html, css, js (i'm getting there), rest, browser extensions" }
 ];
 
@@ -271,11 +271,6 @@ function App() {
               <a className="r-link" href="#">linkedin.com/in/diogo-porto</a>
             </li>
             <li>
-              <span className="r-contact-k">site</span>
-              <span className="r-contact-arrow">→</span>
-              <a className="r-link" href="#">diogoporto.dev</a>
-            </li>
-            <li>
               <span className="r-contact-k">phone</span>
               <span className="r-contact-arrow">→</span>
               <span>+351 933 949 061</span>
@@ -296,39 +291,6 @@ function App() {
           <div className="r-eof">— end of file —</div>
         </footer>
       </div>
-
-      <TweaksPanel title="Tweaks">
-        <TweakSection title="paper">
-          <TweakRadio
-            label="background"
-            value={tweaks.paper}
-            onChange={(v) => setTweak("paper", v)}
-            options={[
-              { value: "cream", label: "Cream" },
-              { value: "white", label: "Plain" },
-              { value: "green", label: "Phosphor" }
-            ]}
-          />
-        </TweakSection>
-        <TweakSection title="quirks">
-          <TweakToggle
-            label="terminal cursor"
-            value={tweaks.showCursor}
-            onChange={(v) => setTweak("showCursor", v)}
-          />
-          <TweakToggle
-            label="visitor counter"
-            value={tweaks.showCounter}
-            onChange={(v) => setTweak("showCounter", v)}
-          />
-          <TweakSlider
-            label="polaroid tilt"
-            min={-12} max={12} step={1}
-            value={tweaks.polaroidTilt}
-            onChange={(v) => setTweak("polaroidTilt", v)}
-          />
-        </TweakSection>
-      </TweaksPanel>
     </>
   );
 }
